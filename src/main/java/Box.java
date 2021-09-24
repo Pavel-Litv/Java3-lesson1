@@ -19,20 +19,22 @@ public class Box <T>{
     }
     public void boxInfo(){
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+            System.out.println((i+1)+" "+list.get(i));
         }
 
     }
 
-    public void addFruit(T anotherBox<T>){
-        
+    public void addFruit(T someFruit){
+        list.add(someFruit);
+
+
     }
-    float getWeight() {
-        if (list.isEmpty()) {
-            return 0;
-        } else {
-            return list.size() * list.get(0).getWeight();
-        }
-    }
+//    float getWeight() {
+//        if (list.isEmpty()) {
+//            return 0;
+//        } else {
+//            return list.size();
+//        }
+//    }
 
 }
