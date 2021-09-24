@@ -5,4 +5,9 @@ public class Apple extends Fruit {
         super(1.0f);
 
     }
+
+    @Override
+    public String toString() {
+        return "Яблоко";
+    }
 }

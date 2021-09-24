@@ -18,6 +18,17 @@ public class HomeWork {
             appleBox1.addBox(new Apple());
         }
         appleBox1.boxInfo();
+        for (int i = 0; i < 6; i++) {
+            orangeBox1.addBox(new Orange());
+        }
+        orangeBox1.addFruit(new Orange());
+        orangeBox1.boxInfo();
+        Box<Orange> orangeBox2 = new Box<>();
+        orangeBox2.addFruit(new Orange());
+        orangeBox1.addFruitInBox(orangeBox2);
+        orangeBox2.boxInfo();
+        System.out.println();
+        orangeBox2.boxInfo();
     }
 
 

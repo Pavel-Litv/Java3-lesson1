@@ -23,6 +23,10 @@ public class Box <T>{
         }
 
     }
+    public void addFruitInBox(Box<T> someBox ) {
+        someBox.list.addAll(this.list);
+        this.list.clear();// коробка не очищается ?
+    }
 
     public void addFruit(T someFruit){
         list.add(someFruit);

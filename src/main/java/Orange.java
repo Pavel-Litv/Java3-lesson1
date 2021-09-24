@@ -5,4 +5,9 @@ public class Orange extends Fruit{
         super(1.5f);
 
     }
+
+    @Override
+    public String toString() {
+        return "Апельсин";
+    }
 }
